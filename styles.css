@@ -17,30 +17,37 @@ footer {
 
 .w {
   background-image: url("images/crash.png");
+  box-shadow: 0 0 30px 3px red;
 }
 
 .a {
   background-image: url("images/kick.png");
+  box-shadow: 0 0 30px 3px blue;
 }
 
 .s {
   background-image: url("images/snare.png");
+  box-shadow: 0 0 30px 3px pink;
 }
 
 .d {
   background-image: url("images/tom1.png");
+  box-shadow: 0 0 30px 3px yellow;
 }
 
 .j {
   background-image: url("images/tom2.png");
+  box-shadow: 0 0 30px 3px purple;
 }
 
 .k {
   background-image: url("images/tom3.png");
+  box-shadow: 0 0 30px 3px green;
 }
 
 .l {
   background-image: url("images/tom4.png");
+  box-shadow: 0 0 30px 3px palegreen;
 }
 
 .set {
@@ -56,7 +63,6 @@ footer {
   box-shadow: 0 3px 4px 0 #dbedf3;
   opacity: 0.5;
 }
-
 .red {
   color: red;
 }
