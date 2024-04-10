@@ -14,6 +14,7 @@ for (i = 0; i < numberOfDrumButtons; i++) {
       {
         var buttonInnerHTML = this.innerHTML;
         makeSound(buttonInnerHTML);
+        buttonAnimation(buttonInnerHTML);
       }
     );
 }
@@ -22,6 +23,7 @@ for (i = 0; i < numberOfDrumButtons; i++) {
 // Detecting keyboard press.
 document.addEventListener("keypress", function (event) {
   makeSound(event.key);
+  buttonAnimation(event.key);
 });
 
 function makeSound(key) {
@@ -59,4 +61,14 @@ function makeSound(key) {
       console.log(buttonInnerHTML);
       break;
   }
+}
+// Button animation when pressed.
+function buttonAnimation(currentKey) {
+  var activeButton = document.querySelector("." + currentKey);
+  activeButton.classList.add("pressed");
+
+  //To remove the animation form the button using the setTimeout function.
+  setTimeout(function () {
+    activeButton.classList.remove("pressed");
+  }, 100);
 }
